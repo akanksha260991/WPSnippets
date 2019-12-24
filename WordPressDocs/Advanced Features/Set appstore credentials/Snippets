@@ -1,0 +1,31 @@
+<code lang="ruby" name="appStoreConfiguration">
+desired_caps = {
+    'browserstack.appStoreConfiguration': '{"username":"your_email", "password":"your_password"}'
+}
+</code>
+
+
+<code lang="java" name="appStoreConfiguration">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.deviceOrientation", "{"username":"your_email", "password":"your_password"}");
+</code>
+
+
+<code lang="python" name="appStoreConfiguration">
+desired_cap = {
+	'browserstack.deviceOrientation': '{"username":"your_email", "password":"your_password"}'
+}
+</code>
+
+
+<code lang="nodejs" name="appStoreConfiguration">
+var capabilities = {
+	'browserstack.deviceOrientation': '{"username":"your_email", "password":"your_password"}'
+}
+</code>
+
+
+<code lang="c#" name="appStoreConfiguration">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.deviceOrientation", "{"username":"your_email", "password":"your_password"}");
+</code>

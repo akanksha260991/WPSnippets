@@ -1,0 +1,105 @@
+<code lang="ruby" name="code">
+username = ENV["BROWSERSTACK_USERNAME"]
+access_key = ENV["BROWSERSTACK_ACCESS_KEY"]
+browserstack_local = ENV["BROWSERSTACK_LOCAL"]
+browserstack_local_identifier = ENV["BROWSERSTACK_LOCAL_IDENTIFIER"]
+app = ENV["BROWSERSTACK_APP_ID"]
+
+desired_caps = {
+	'device': 'Samsung Galaxy S8',
+    'app': app,
+    'browserstack.local': browserstack_local,
+    'browserstack.localIdentifier': browserstack_local_identifier
+}
+
+
+appium_driver = Appium::Driver.new({
+    'caps' => desired_caps,
+    'appium_lib' => {
+        :server_url => "http://#{username}:#{access_key}@hub-cloud.browserstack.com/wd/hub"
+    }}, true)
+</code>
+
+
+<code lang="java" name="code">
+String username = System.getenv("BROWSERSTACK_USERNAME");
+String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+String browserstackLocal = System.getenv("BROWSERSTACK_LOCAL");
+String browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
+String app = System.getenv("BROWSERSTACK_APP_ID");
+
+public static void main(String args[]) throws MalformedURLException, InterruptedException {
+    DesiredCapabilities caps = new DesiredCapabilities();
+    caps.setCapability("device", "Samsung Galaxy S8");
+    caps.setCapability("app", app);
+    caps.setCapability("browserstack.local", browserstackLocal);
+    caps.setCapability("browserstack.localIdentifier", browserstackLocalIdentifier);
+}
+
+driver = new AndroidDriver<AndroidElement>(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), caps);
+</code>
+
+
+<code lang="python" name="code">
+username = os.getenv("BROWSERSTACK_USERNAME")
+access_key = os.getenv("BROWSERSTACK_ACCESS_KEY")
+browserstack_local = os.getenv("BROWSERSTACK_LOCAL")
+browserstack_local_identifier = os.getenv("BROWSERSTACK_LOCAL_IDENTIFIER")
+app = os.getenv("BROWSERSTACK_APP_ID")
+
+desired_cap = {
+ 'device': 'Samsung Galaxy S8',
+ 'app': app,
+ 'browserstack.local': browserstack_local,
+ 'browserstack.localIdentifier': browserstack_local_identifier,
+ 'browserstack.user': username,
+ 'browserstack.key': access_key
+}
+
+driver = webdriver.Remote("http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_cap)
+</code>
+
+
+<code lang="nodejs" name="orientation">
+username = process.env.BROWSERSTACK_USERNAME
+accessKey = process.env.BROWSERSTACK_ACCESS_KEY
+browserstackLocal = process.env.BROWSERSTACK_LOCAL
+browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER
+app = os.getenv("BROWSERSTACK_APP_ID")
+app = process.env.
+
+var capabilities = {
+ "device" : "Samsung Galaxy S8",
+ "app" : app
+ "browserstack.local" : browserstackLocal,
+ "browserstack.localIdentifier" : browserstackLocalIdentifier,
+ "browserstack.user" : username,
+ "browserstack.key" : accessKey
+}
+
+driver = wd.promiseRemote("http://hub-cloud.browserstack.com/wd/hub");
+ 
+driver
+  .init(capabilities)
+  //Write your code here
+  .fin(function() { return driver.quit(); })
+  .done();
+</code>
+
+
+<code lang="c#" name="code">
+username = Environment.GetEnvironmentVariable("BROWSERSTACK_USERNAME");
+accessKey = Environment.GetEnvironmentVariable("BROWSERSTACK_ACCESS_KEY");
+browserstackLocal = Environment.GetEnvironmentVariable("BROWSERSTACK_LOCAL");
+browserstackLocalIdentifier = Environment.GetEnvironmentVariable("BROWSERSTACK_LOCAL_IDENTIFIER");
+app = Environment.GetEnvironmentVariable("BROWSERSTACK_APP_ID");
+
+DesiredCapabilities caps = new DesiredCapabilities();
+caps.SetCapability("device", "Samsung Galaxy S8");
+caps.SetCapability("app", app);
+caps.SetCapability("browserstack.local", browserstackLocal);
+caps.SetCapability("browserstack.localIdentifier", browserstackLocalIdentifier);
+
+AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new Uri("http://hub-cloud.browserstack.com/wd/hub"), caps);
+
+</code>

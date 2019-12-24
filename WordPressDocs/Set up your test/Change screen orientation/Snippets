@@ -1,0 +1,31 @@
+<code lang="ruby" name="orientation">
+desired_caps = {
+    'deviceOrientation': 'landscape'
+}
+</code>
+
+
+<code lang="java" name="orientation">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("deviceOrientation", "landscape");
+</code>
+
+
+<code lang="python" name="orientation">
+desired_cap = {
+	'deviceOrientation': 'landscape'
+}
+</code>
+
+
+<code lang="nodejs" name="orientation">
+var capabilities = {
+	'deviceOrientation': 'landscape',
+}
+</code>
+
+
+<code lang="c#" name="orientation">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("deviceOrientation", "landscape");
+</code>

@@ -1,0 +1,31 @@
+<code lang="ruby" name="capability">
+desired_caps = {
+    'browserstack.networkLogs': 'true'
+}
+</code>
+
+
+<code lang="java" name="capability">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.networkLogs", "true");
+</code>
+
+
+<code lang="python" name="capability">
+desired_cap = {
+	'browserstack.networkLogs': 'true'
+}
+</code>
+
+
+<code lang="nodejs" name="capability">
+var capabilities = {
+	'browserstack.networkLogs': 'true',
+}
+</code>
+
+
+<code lang="c#" name="capability">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.networkLogs", "true");
+</code>

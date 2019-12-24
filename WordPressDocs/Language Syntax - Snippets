@@ -1,0 +1,33 @@
+Java
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability("automationName", "Appium");
+/* Remember to change your Appium URL (command executor) to https://appium.bitbar.com/wd/hub/ */
+
+
+Ruby
+desired_caps = {
+  caps: {
+    automationName: "XCUITest"
+  }
+}
+# Remember to change your Appium URL (command executor) to https://appium.bitbar.com/wd/hub/
+
+NodeJS
+var capabilities = {
+	
+	'automationName': 'Appium',
+}
+// Remember to change your Appium URL (command executor) to https://appium.bitbar.com/wd/hub/
+
+
+Python
+capabilities = {
+	'automationName': 'Appium'
+}
+# Remember to change your Appium URL (command executor) to https://appium.bitbar.com/wd/hub/
+
+
+C#
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("os_version", "11");
+// Remember to change your Appium URL (command executor) to https://appium.bitbar.com/wd/hub/

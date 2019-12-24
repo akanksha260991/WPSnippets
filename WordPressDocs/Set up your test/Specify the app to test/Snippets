@@ -1,0 +1,68 @@
+//Ruby Snippets
+<code lang="ruby" name="app_url">
+desired_caps = {
+    'app': 'bs://9fg0rt302be241e6524ebc67253ecdee266343'
+}
+</code>
+
+<code lang="ruby" name="custom_id">
+desired_caps = {
+    'app': 'MyCalculatorApp'
+}
+</code>
+
+
+//Java Snippets
+<code lang="java" name="app_url">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("app", "bs://9fg0rt302be241e6524ebc67253ecdee266343");
+</code>
+
+<code lang="java" name="custom_id">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("app", "MyCalculatorApp");
+</code>
+
+
+
+//Python Snippets
+<code lang="python" name="app_url">
+desired_cap = {
+	'app': 'bs://9fg0rt302be241e6524ebc67253ecdee266343'
+}
+</code>
+
+<code lang="python" name="custom_id">
+desired_cap = {
+	'app': 'MyCalculatorApp'
+}
+</code>
+
+
+
+
+//NodeJS Snippets
+<code lang="nodejs" name="app_url">
+var capabilities = {
+	'app': 'bs://9fg0rt302be241e6524ebc67253ecdee266343'
+}
+</code>
+
+<code lang="nodejs" name="custom_id">
+desired_cap = {
+	'app': 'MyCalculatorApp'
+}
+</code>
+
+
+
+// C# Snippets
+<code lang="c#" name="app_url">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.SetCapability("app", "bs://9fg0rt302be241e6524ebc67253ecdee266343");
+</code>
+
+<code lang="c#" name="custom_id">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.SetCapability("app", "MyCalculatorApp");
+</code>

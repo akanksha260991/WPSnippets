@@ -1,0 +1,41 @@
+<code lang="ruby" name="organize_test">
+desired_caps = {
+    'project': 'MySampleProject',
+    'build': 'MySampleBuild',
+    'name': 'MySampleTest'
+}
+</code>
+
+
+<code lang="java" name="organize_test">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("project", "MySampleProject");
+desiredCapabilities.setCapability("build", "MySampleBuild");
+desiredCapabilities.setCapability("name", "MySampleTest");
+</code>
+
+
+<code lang="python" name="organize_test">
+desired_cap = {
+	'project': 'MySampleProject',
+    'build': 'MySampleBuild',
+    'name': 'MySampleTest'
+}
+</code>
+
+
+<code lang="nodejs" name="organize_test">
+var capabilities = {
+	'project': 'MySampleProject',
+    'build': 'MySampleBuild',
+    'name': 'MySampleTest'
+}
+</code>
+
+
+<code lang="c#" name="organize_test">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("project", "MySampleProject");
+capability.SetCapability("build", "MySampleBuild");
+capability.SetCapability("name", "MySampleTest");
+</code>

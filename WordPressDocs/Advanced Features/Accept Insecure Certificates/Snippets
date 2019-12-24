@@ -1,0 +1,31 @@
+<code lang="ruby" name="acceptInsecureCerts">
+desired_caps = {
+    'browserstack.acceptInsecureCerts': 'true'
+}
+</code>
+
+
+<code lang="java" name="acceptInsecureCerts">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.acceptInsecureCerts", "true");
+</code>
+
+
+<code lang="python" name="acceptInsecureCerts">
+desired_cap = {
+	'browserstack.acceptInsecureCerts': 'true'
+}
+</code>
+
+
+<code lang="nodejs" name="acceptInsecureCerts">
+var capabilities = {
+	'browserstack.acceptInsecureCerts': 'true'
+}
+</code>
+
+
+<code lang="c#" name="acceptInsecureCerts">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.acceptInsecureCerts", "true");
+</code>

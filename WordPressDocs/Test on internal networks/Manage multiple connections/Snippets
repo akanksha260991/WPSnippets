@@ -1,0 +1,68 @@
+//Ruby Snippets
+<code lang="ruby" name="localidentifier">
+bs_local_args = { "key" => "<browserstack-accesskey>" , "localIdentifier" => "randomstring"}
+</code>
+
+<code lang="ruby" name="capability">
+desired_caps = {
+    'browserstack.local': 'true',
+    'browserstack.localIdentifier': 'Test123'
+}
+</code>
+
+
+
+//Java Snippets
+<code lang="java" name="localidentifier">
+bsLocalArgs.put("localIdentifier", "Test123");
+</code>
+
+<code lang="java" name="capability">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.local", "true");
+desiredCapabilities.setCapability("browserstack.localIdentifier", "true");
+</code>
+
+
+
+
+//Python Snippets
+<code lang="python" name="localidentifier">
+bs_local_args = { "key": "<browserstack-accesskey>" , "localIdentifier": "randomstring"}
+</code>
+
+<code lang="python" name="capability">
+desired_cap = {
+	'browserstack.local': 'true',
+	'browserstack.localIdentifier': 'true'
+}
+</code>
+
+
+
+
+//NodeJS Snippets
+<code lang="nodejs" name="localidentifier">
+bs_local_args = { 'key': '<browserstack-accesskey>', 'localIdentifier': 'randomstring' }
+</code>
+
+<code lang="nodejs" name="capability">
+var capabilities = {
+	'browserstack.local': 'true',
+	'browserstack.localIdentifier': 'true'
+}
+</code>
+
+
+
+//C# Snippets
+<code lang="c#" name="localidentifier">
+bsLocalArgs.Add(new KeyValuePair<string, string>("localIdentifier", "randomstring"));
+</code>
+
+<code lang="c#" name="capability">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.local", "true");
+capability.SetCapability("browserstack.localIdentifier", "true");
+</code>
+

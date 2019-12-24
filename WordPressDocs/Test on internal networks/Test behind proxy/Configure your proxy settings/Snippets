@@ -1,0 +1,106 @@
+//Ruby Snippets
+<code lang="ruby" name="proxy">
+bs_local_args = { "key" => "<browserstack-accesskey>", "proxyHost" => "127.0.0.1", "proxyPort" => "8000"}
+</code>
+
+<code lang="ruby" name="proxy_auth">
+bs_local_args = { "key" => "<browserstack-accesskey>", "proxyHost" => "127.0.0.1", "proxyPort" => "8000", "proxyUser" => "user", "proxyPass" => "password"}
+</code>
+
+<code lang="ruby" name="mitm">
+bs_local_args = { "key" => "<browserstack-accesskey>", "localProxyHost" => "127.0.0.1", "localProxyPort" => "8000"}
+</code>
+
+<code lang="ruby" name="mitm_auth">
+bs_local_args = { "key" => "<browserstack-accesskey>", "localProxyHost" => "127.0.0.1", "localProxyPort" => "8000", "-localProxyUser" => "user", "-localProxyPass" => "password"}
+</code>
+
+
+
+// Java Snippets
+<code lang="java" name="proxy">
+bsLocalArgs.put("proxyHost", "127.0.0.1");
+bsLocalArgs.put("proxyPort", "8000");
+</code>
+
+<code lang="java" name="proxy_auth">
+bsLocalArgs.put("proxyHost", "127.0.0.1");
+bsLocalArgs.put("proxyPort", "8000");
+bsLocalArgs.put("proxyUser", "user");
+bsLocalArgs.put("proxyPass", "password");
+</code>
+
+<code lang="java" name="mitm">
+bsLocalArgs.put("localProxyHost", "127.0.0.1");
+bsLocalArgs.put("localProxyPort", "8000");
+</code>
+
+<code lang="java" name="mitm_auth">
+bsLocalArgs.put("localProxyHost", "127.0.0.1");
+bsLocalArgs.put("localProxyPort", "8000");
+bsLocalArgs.put("-localProxyUser", "user");
+bsLocalArgs.put("-localProxyPass", "password");
+</code>
+
+
+
+//Python Snippets
+<code lang="python" name="proxy">
+bs_local_args = { "key": "<browserstack-accesskey>", "proxyHost": "127.0.0.1", "proxyPort": "8000"}
+</code>
+
+<code lang="python" name="proxy_auth">
+bs_local_args = { "key": "<browserstack-accesskey>", "proxyHost": "127.0.0.1", "proxyPort": "8000", "proxyUser": "user", "proxyPass": "password"}
+</code>
+
+<code lang="python" name="mitm">
+bs_local_args = { "key": "<browserstack-accesskey>", "localProxyHost": "127.0.0.1", "localProxyPort": "8000"}
+</code>
+
+<code lang="python" name="mitm_auth">
+bs_local_args = { "key": "<browserstack-accesskey>", "localProxyHost": "127.0.0.1", "localProxyPort": "8000", "-localProxyUser": "user", "-localProxyPass": "password"}
+</code>
+
+
+//NodeJS Snippets
+<code lang="nodejs" name="proxy">
+bs_local_args = { 'key': '<browserstack-accesskey>', 'proxyHost': '127.0.0.1', 'proxyPort': '8000' }
+</code>
+
+<code lang="nodejs" name="proxy_auth">
+bs_local_args = { 'key': '<browserstack-accesskey>', 'proxyHost': '127.0.0.1', 'proxyPort': '8000', 'proxyUser': 'user', 'proxyPass': 'password' }
+</code>
+
+<code lang="nodejs" name="mitm">
+bs_local_args = { 'key': '<browserstack-accesskey>', 'localProxyHost': '127.0.0.1', 'localProxyPort': '8000' }
+</code>
+
+<code lang="nodejs" name="mitm_auth">
+bs_local_args = { 'key': '<browserstack-accesskey>', 'localProxyHost': '127.0.0.1', 'localProxyPort': '8000', 'localProxyUser': 'user', 'localProxyPass': 'password' }
+</code>
+
+
+//C# Snippets
+<code lang="c#" name="proxy">
+bsLocalArgs.Add(new KeyValuePair<string, string>("proxyHost", "127.0.0.1"));
+bsLocalArgs.Add(new KeyValuePair<string, string>("proxyPort", "8000"));
+</code>
+
+<code lang="c#" name="proxy_auth">
+bsLocalArgs.Add(new KeyValuePair<string, string>("proxyHost", "127.0.0.1"));
+bsLocalArgs.Add(new KeyValuePair<string, string>("proxyPort", "8000"));
+bsLocalArgs.Add(new KeyValuePair<string, string>("proxyUser", "user"));
+bsLocalArgs.Add(new KeyValuePair<string, string>("proxyPass", "password"));
+</code>
+
+<code lang="c#" name="mitm">
+bsLocalArgs.Add(new KeyValuePair<string, string>("localProxyHost", "127.0.0.1"));
+bsLocalArgs.Add(new KeyValuePair<string, string>("localProxyPort", "8000"));
+</code>
+
+<code lang="c#" name="mitm_auth">
+bsLocalArgs.Add(new KeyValuePair<string, string>("localProxyHost", "127.0.0.1"));
+bsLocalArgs.Add(new KeyValuePair<string, string>("localProxyPort", "8000"));
+bsLocalArgs.Add(new KeyValuePair<string, string>("-localProxyUser", "user"));
+bsLocalArgs.Add(new KeyValuePair<string, string>("-localProxyPass", "password"));
+</code>

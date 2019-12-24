@@ -1,0 +1,31 @@
+<code lang="ruby" name="resignApp">
+desired_caps = {
+    'browserstack.resignApp': 'false'
+}
+</code>
+
+
+<code lang="java" name="resignApp">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.resignApp", "false");
+</code>
+
+
+<code lang="python" name="resignApp">
+desired_cap = {
+	'browserstack.resignApp': 'false'
+}
+</code>
+
+
+<code lang="nodejs" name="resignApp">
+var capabilities = {
+	'browserstack.resignApp': 'false'
+}
+</code>
+
+
+<code lang="c#" name="resignApp">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.resignApp", "false");
+</code>

@@ -1,0 +1,81 @@
+<code lang="ruby" name="code">
+username = ENV['BROWSERSTACK_USERNAME']
+access_key = ENV['BROWSERSTACK_ACCESS_KEY']
+
+desired_caps = {
+	'device': 'Samsung Galaxy S8',
+    'app': ENV['BROWSERSTACK_APP_ID'],
+    'build': 'MyBuild',
+}
+
+appium_driver = Appium::Driver.new({
+	'caps' => desired_caps,
+	'appium_lib' => {
+    :server_url => "http://#{username}:#{access_key}@hub-cloud.browserstack.com/wd/hub"
+	}}, true)
+</code>
+
+
+<code lang="java" name="code">
+String username = System.getenv("BROWSERSTACK_USERNAME");
+String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+
+
+public static void main(String args[]) throws MalformedURLException, InterruptedException {
+    DesiredCapabilities caps = new DesiredCapabilities();
+    caps.setCapability("device", "Samsung Galaxy S8");
+    caps.setCapability("app", System.getenv("BROWSERSTACK_APP_ID");
+    caps.setCapability("build", "MyBuild");
+}
+
+driver = new AndroidDriver<AndroidElement>(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), caps);
+</code>
+
+
+<code lang="python" name="code">
+username = os.getenv("BROWSERSTACK_USERNAME")
+access_key = os.getenv("BROWSERSTACK_ACCESS_KEY")
+app = 
+
+desired_cap = {
+ 'device': 'Samsung Galaxy S8',
+ 'app': os.getenv("BROWSERSTACK_APP_ID"),
+ 'build': 'MyBuild'
+}
+
+driver = webdriver.Remote("http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_cap)
+</code>
+
+
+<code lang="nodejs" name="code">
+username = process.env.BROWSERSTACK_USERNAME
+accessKey = process.env.BROWSERSTACK_ACCESS_KEY
+
+var capabilities = {
+ "device" : "Samsung Galaxy S8",
+ "app" : process.env.BROWSERSTACK_APP_ID,
+ "build" : "MyBuild"
+}
+
+driver = wd.promiseRemote("http://hub-cloud.browserstack.com/wd/hub");
+ 
+driver
+  .init(capabilities)
+  //Write your code here
+  .fin(function() { return driver.quit(); })
+  .done();
+</code>
+
+
+<code lang="c#" name="code">
+username = Environment.GetEnvironmentVariable("BROWSERSTACK_USERNAME");
+accessKey = Environment.GetEnvironmentVariable("BROWSERSTACK_ACCESS_KEY");
+
+DesiredCapabilities caps = new DesiredCapabilities();
+caps.SetCapability("device", "Samsung Galaxy S8");
+caps.SetCapability("app", Environment.GetEnvironmentVariable("BROWSERSTACK_APP_ID");
+caps.SetCapability("build", "MySampleBuild");
+
+AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new Uri("http://hub-cloud.browserstack.com/wd/hub"), caps);
+
+</code>

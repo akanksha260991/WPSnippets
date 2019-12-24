@@ -1,0 +1,71 @@
+<code lang="ruby" name="binding">
+bs_local_args = { "key" => "<browserstack-accesskey>" , "-pac-file" => "<pac_file_abs_path>"}
+</code>
+
+<code lang="ruby" name="sample">
+function FindProxyForURL(url, host) {
+if (isPlainHostName(host))
+  return "DIRECT";
+else
+  return "PROXY proxy:80";
+}
+</code>
+
+
+
+<code lang="java" name="binding">
+bsLocalArgs.put("-pac-file", "<pac_file_abs_path>");
+</code>
+
+<code lang="java" name="sample">
+function FindProxyForURL(url, host) {
+if (isPlainHostName(host))
+  return "DIRECT";
+else
+  return "PROXY proxy:80";
+}
+</code>
+
+
+
+<code lang="python" name="binding">
+bs_local_args = { "key": "<browserstack-accesskey>" , "-pac-file": "<pac_file_abs_path>"}
+</code>
+
+<code lang="python" name="sample">
+function FindProxyForURL(url, host) {
+if (isPlainHostName(host))
+  return "DIRECT";
+else
+  return "PROXY proxy:80";
+}
+</code>
+
+
+<code lang="nodejs" name="binding">
+bs_local_args = { 'key': '<browserstack-accesskey>', 'pac-file': '<pac_file_abs_path>' }
+</code>
+
+<code lang="nodejs" name="sample">
+function FindProxyForURL(url, host) {
+if (isPlainHostName(host))
+  return "DIRECT";
+else
+  return "PROXY proxy:80";
+}
+</code>
+
+
+<code lang="c#" name="binding">
+bsLocalArgs.Add(new KeyValuePair<string, string>("-pac-file", "<pac_file_abs_path>"));
+</code>
+
+<code lang="c#" name="sample">
+function FindProxyForURL(url, host) {
+if (isPlainHostName(host))
+  return "DIRECT";
+else
+  return "PROXY proxy:80";
+}
+</code>
+

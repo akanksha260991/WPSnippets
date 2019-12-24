@@ -1,0 +1,146 @@
+<code lang="ruby" name="deviceLogs">
+desired_caps = {
+    'browserstack.deviceLogs': 'false'
+}
+</code>
+
+<code lang="ruby" name="appiumLogs">
+desired_caps = {
+    'browserstack.appiumLogs': 'false'
+}
+</code>
+
+<code lang="ruby" name="debug">
+desired_caps = {
+    'debug': 'true'
+}
+</code>
+
+<code lang="ruby" name="video">
+desired_caps = {
+    'browserstack.video': 'false'
+}
+</code>
+
+<code lang="ruby" name="networkLogs">
+desired_caps = {
+    'browserstack.networkLogs': 'true'
+}
+</code>
+
+
+<code lang="java" name="deviceLogs">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.deviceLogs", "false");
+</code>
+
+<code lang="java" name="appiumLogs">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.appiumLogs", "false");
+</code>
+
+<code lang="java" name="debug">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("debug", "true");
+</code>
+
+<code lang="java" name="video">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.video", "false");
+</code>
+
+<code lang="java" name="networkLogs">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.networkLogs", "true");
+</code>
+
+
+
+<code lang="python" name="deviceLogs">
+desired_cap = {
+	'browserstack.deviceLogs': 'false'
+}
+</code>
+
+<code lang="python" name="appiumLogs">
+desired_cap = {
+	'browserstack.appiumLogs': 'false'
+}
+</code>
+
+<code lang="python" name="debug">
+desired_cap = {
+	'debug': 'true'
+}
+</code>
+
+<code lang="python" name="video">
+desired_cap = {
+	'browserstack.video': 'false'
+}
+</code>
+
+<code lang="python" name="networkLogs">
+desired_cap = {
+	'browserstack.networkLogs': 'true'
+}
+</code>
+
+
+
+<code lang="nodejs" name="deviceLogs">
+var capabilities = {
+	'browserstack.deviceLogs': 'false'
+}
+</code>
+
+<code lang="nodejs" name="appiumLogs">
+var capabilities = {
+	'browserstack.appiumLogs': 'false'
+}
+</code>
+
+<code lang="nodejs" name="debug">
+var capabilities = {
+	'debug': 'true'
+}
+</code>
+
+<code lang="nodejs" name="video">
+var capabilities = {
+	'browserstack.video': 'false'
+}
+</code>
+
+<code lang="nodejs" name="networkLogs">
+var capabilities = {
+	'browserstack.networkLogs': 'true'
+}
+</code>
+
+
+
+<code lang="c#" name="deviceLogs">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.deviceLogs", "false");
+</code>
+
+<code lang="c#" name="appiumLogs">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.appiumLogs", "false");
+</code>
+
+<code lang="c#" name="debug">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("debug", "true");
+</code>
+
+<code lang="c#" name="video">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.video", "false");
+</code>
+
+<code lang="c#" name="networkLogs">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("networkLogs", "true");
+</code>

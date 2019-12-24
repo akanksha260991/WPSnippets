@@ -1,0 +1,91 @@
+<code lang="ruby" name="timezone">
+desired_caps = {
+    'browserstack.timezone': 'UTC'
+}
+</code>
+
+<code lang="ruby" name="language">
+desired_caps = {
+    'language': 'fr'
+}
+</code>
+
+<code lang="ruby" name="locale">
+desired_caps = {
+    'locale': 'fr_CA'
+}
+</code>
+
+
+
+<code lang="java" name="timezone">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.timezone", "UTC");
+</code>
+
+<code lang="java" name="language">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("language", "fr");
+</code>
+
+<code lang="java" name="locale">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("locale", "fr_CA");
+</code>
+
+
+
+<code lang="python" name="timezone">
+desired_cap = {
+	'browserstack.timezone': 'UTC'
+}
+</code>
+
+<code lang="python" name="language">
+desired_cap = {
+	'language': 'fr
+}
+</code>
+
+<code lang="python" name="locale">
+desired_cap = {
+	'locale': 'fr_CA'
+}
+</code>
+
+
+
+<code lang="nodejs" name="timezone">
+var capabilities = {
+	'browserstack.timezone': 'UTC'
+}
+</code>
+
+<code lang="nodejs" name="language">
+var capabilities = {
+	'language': 'fr'
+}
+</code>
+
+<code lang="nodejs" name="locale">
+var capabilities = {
+	'locale': 'fr_CA'
+}
+</code>
+
+
+
+<code lang="c#" name="timezone">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.timezone", "UTC");
+</code>
+
+<code lang="c#" name="language">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("language", "fr");
+</code>
+
+<code lang="c#" name="locale">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("locale", "fr_CA");
+</code>

@@ -1,0 +1,62 @@
+<code lang="ruby" name="screenshot">
+# Import the relevant packages
+
+# Your test code
+
+# Take a screenshot 
+driver.screenshot_as(:base64) # via core_lib
+@driver.screenshot_as(:base64)
+
+# Save screenshot to /location/to/screenshot.png
+</code>
+
+
+<code lang="java" name="screenshot">
+/* Import the relevant packages */
+
+/* your test code */
+
+/* Take a screenshot */
+File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+/* Save screenshot to /location/to/screenshot.png */
+
+</code>
+
+
+<code lang="python" name="screenshot">
+# Import the relevant packages
+
+# your test code
+
+# Take a screenshot 
+screenshotBase64 = self.driver.get_screenshot_as_base64()
+
+# Save screenshot to /location/to/screenshot.png
+</code>
+
+
+<code lang="nodejs" name="screenshot">
+//Import the relevant packages
+
+// your test code
+
+// Take a screenshot 
+let screenshot = driver.takeScreenshot();
+
+let screenshot = await driver.takeScreenshot();
+
+// Save screenshot to /location/to/screenshot.png
+</code>
+
+
+<code lang="c#" name="screenshot">
+//Import the relevant packages
+
+// your test code
+
+// Take a screenshot 
+Screenshot screenshot = driver.GetScreenshot();
+
+// Save screenshot to /location/to/screenshot.png
+</code>

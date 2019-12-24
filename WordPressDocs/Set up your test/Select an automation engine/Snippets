@@ -1,0 +1,31 @@
+<code lang="ruby" name="automationName">
+desired_caps = {
+    'automationName': 'Appium'
+}
+</code>
+
+
+<code lang="java" name="automationName">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("automationName", "Appium");
+</code>
+
+
+<code lang="python" name="automationName">
+desired_cap = {
+	'automationName': 'Appium'
+}
+</code>
+
+
+<code lang="nodejs" name="automationName">
+var capabilities = {
+	'automationName': 'Appium'
+}
+</code>
+
+
+<code lang="c#" name="automationName">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("automationName", "Appium");
+</code>

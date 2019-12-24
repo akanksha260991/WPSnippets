@@ -1,0 +1,172 @@
+//Ruby Snippets
+<code lang="ruby" name="installation">
+# Command to install Ruby bindings for BrowserStack Local
+gem install browserstack-local
+</code>
+
+<code lang="ruby" name="example">
+require 'browserstack/local'
+
+#creates an instance of Local
+bs_local = BrowserStack::Local.new
+
+#replace <browserstack-accesskey> with your key. You can also set an environment variable - "BROWSERSTACK_ACCESS_KEY".
+bs_local_args = { "key" => "<browserstack-accesskey>" }
+
+#starts the Local instance with the required arguments
+bs_local.start(bs_local_args)
+
+#check if BrowserStack local instance is running
+puts bs_local.isRunning
+
+#stop the Local instance
+bs_local.stop
+
+</code>
+<code lang="ruby" name="capability">
+desired_caps = {
+    'browserstack.local': 'true'
+}
+</code>
+
+
+
+//Java Snippets
+<code lang="java" name="installation">
+/* Add this dependency to your project's POM */
+<dependency>
+    <groupId>com.browserstack</groupId>
+    <artifactId>browserstack-local-java</artifactId>
+    <version>1.0.3</version>
+</dependency>
+</code>
+
+<code lang="java" name="example">
+/* Add this dependency to your project's POM */
+import com.browserstack.local.Local;
+
+# creates an instance of Local
+Local bsLocal = new Local();
+
+# replace <browserstack-accesskey> with your key. You can also set an environment variable - "BROWSERSTACK_ACCESS_KEY".
+HashMap<String, String> bsLocalArgs = new HashMap<String, String>();
+bsLocalArgs.put("key", "<browserstack-accesskey>");
+
+# starts the Local instance with the required arguments
+bsLocal.start(bsLocalArgs);
+
+# check if BrowserStack local instance is running
+System.out.println(bsLocal.isRunning());
+
+#stop the Local instance
+bsLocal.stop();
+</code>
+
+</code>
+<code lang="java" name="capability">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.local", "true");
+</code>
+
+
+
+//Python Snippets
+<code lang="python" name="installation">
+/* Command to install Python bindings for BrowserStack Local */
+pip install browserstack-local
+</code>
+
+<code lang="python" name="example">
+from browserstack.local import Local
+
+#creates an instance of Local
+bs_local = Local()
+
+#replace <browserstack-accesskey> with your key. You can also set an environment variable - "BROWSERSTACK_ACCESS_KEY".
+bs_local_args = { "key": "<browserstack-accesskey>" }
+
+#starts the Local instance with the required arguments
+bs_local.start(**bs_local_args)
+
+#check if BrowserStack local instance is running
+print(bs_local.isRunning())
+
+#stop the Local instance
+bs_local.stop()
+</code>
+
+<code lang="python" name="capability">
+desired_cap = {
+	'browserstack.local': 'true'
+}
+</code>
+
+
+
+//NodeJS Snippets
+<code lang="nodejs" name="installation">
+/* Command to install Nodejs bindings for BrowserStack Local */
+npm install browserstack-local
+</code>
+
+<code lang="nodejs" name="example">
+var browserstack = require('browserstack-local');
+
+//creates an instance of Local
+var bs_local = new browserstack.Local();
+
+// replace <browserstack-accesskey> with your key. You can also set an environment variable - "BROWSERSTACK_ACCESS_KEY".
+var bs_local_args = { 'key': '<browserstack-accesskey>' };
+
+// starts the Local instance with the required arguments
+bs_local.start(bs_local_args, function() {
+  console.log("Started BrowserStackLocal");
+});
+
+// check if BrowserStack local instance is running
+console.log(bs_local.isRunning());
+
+// stop the Local instance
+bs_local.stop(function() {
+  console.log("Stopped BrowserStackLocal");
+});
+</code>
+
+<code lang="nodejs" name="capability">
+var capabilities = {
+	'browserstack.local': 'true',
+}
+</code>
+
+
+
+// C#
+<code lang="c#" name="installation">
+
+</code>
+
+<code lang="c#" name="example">
+using BrowserStack;
+
+# creates an instance of Local
+Local local = new Local();
+
+# replace <browserstack-accesskey> with your key. You can also set an environment variable - "BROWSERSTACK_ACCESS_KEY".
+List<KeyValuePair<string, string>> bsLocalArgs = new List<KeyValuePair<string, string>>() {
+  new KeyValuePair<string, string>("key", "<browserstack-accesskey>"),
+}
+
+# starts the Local instance with the required arguments
+local.start(bsLocalArgs);
+
+# check if BrowserStack local instance is running
+Console.WriteLine(local.isRunning());
+
+# stop the Local instance
+local.stop();
+</code>
+
+<code lang="c#" name="capability">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.local", "true");
+</code>

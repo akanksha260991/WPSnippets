@@ -1,0 +1,31 @@
+<code lang="ruby" name="uploadMedia">
+desired_caps = {
+    'browserstack.uploadMedia': '{"media://a73cd169be98006b6ca8b9b1feaa51c5395df1ad","media://4f13c09b8428ed1b67g561db63af01d44ca540b"}'
+}
+</code>
+
+
+<code lang="java" name="uploadMedia">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.uploadMedia", "{"media://a73cd169be98006b6ca8b9b1feaa51c5395df1ad","media://4f13c09b8428ed1b67g561db63af01d44ca540b"}");
+</code>
+
+
+<code lang="python" name="uploadMedia">
+desired_cap = {
+	'browserstack.uploadMedia': '{"media://a73cd169be98006b6ca8b9b1feaa51c5395df1ad","media://4f13c09b8428ed1b67g561db63af01d44ca540b"}'
+}
+</code>
+
+
+<code lang="nodejs" name="uploadMedia">
+var capabilities = {
+	'browserstack.uploadMedia': '{"media://a73cd169be98006b6ca8b9b1feaa51c5395df1ad","media://4f13c09b8428ed1b67g561db63af01d44ca540b"}',
+}
+</code>
+
+
+<code lang="c#" name="uploadMedia">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.uploadMedia", "{"media://a73cd169be98006b6ca8b9b1feaa51c5395df1ad","media://4f13c09b8428ed1b67g561db63af01d44ca540b"}");
+</code>

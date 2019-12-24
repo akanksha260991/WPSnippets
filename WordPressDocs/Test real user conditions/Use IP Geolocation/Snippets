@@ -1,0 +1,59 @@
+<code lang="ruby" name="networkProfile">
+desired_caps = {
+    'browserstack.networkProfile': '2g-gprs-good'
+}
+</code>
+
+<code lang="ruby" name="customNetwork">
+desired_caps = {
+    'browserstack.geoLocation': '1000, 1000, 100, 1'
+}
+</code>
+
+
+<code lang="java" name="networkProfile">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.networkProfile", "2g-gprs-good");
+</code>
+
+<code lang="java" name="customNetwork">
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("browserstack.customNetwork", "1000, 1000, 100, 1");
+</code>
+
+
+<code lang="python" name="networkProfile">
+desired_cap = {
+	'browserstack.networkProfile': '2g-gprs-good'
+}
+</code>
+
+<code lang="python" name="customNetwork">
+desired_cap = {
+	'browserstack.customNetwork': '1000, 1000, 100, 1'
+}
+</code>
+
+
+<code lang="nodejs" name="networkProfile">
+var capabilities = {
+	'browserstack.networkProfile': '2g-gprs-good'
+}
+</code>
+
+<code lang="nodejs" name="customNetwork">
+var capabilities = {
+	'browserstack.customNetwork': 'B1000, 1000, 100, 1G'
+}
+</code>
+
+
+<code lang="c#" name="networkProfile">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.networkProfile", "2g-gprs-good");
+</code>
+
+<code lang="c#" name="customNetwork">
+DesiredCapabilities capability = new DesiredCapabilities();
+capability.SetCapability("browserstack.customNetwork", "1000, 1000, 100, 1");
+</code>
