@@ -1,19 +1,27 @@
+<snippets>
 <code lang="ruby" name="code">
 username = ENV['BROWSERSTACK_USERNAME']
 access_key = ENV['BROWSERSTACK_ACCESS_KEY']
 
 desired_caps = {
-	'device': 'Samsung Galaxy S8',
+  'device': 'Samsung Galaxy S8',
     'app': ENV['BROWSERSTACK_APP_ID'],
     'build': 'MyBuild',
 }
 
 appium_driver = Appium::Driver.new({
-	'caps' => desired_caps,
-	'appium_lib' => {
+  'caps' => desired_caps,
+  'appium_lib' => {
     :server_url => "http://#{username}:#{access_key}@hub-cloud.browserstack.com/wd/hub"
-	}}, true)
+  }}, true)
 </code>
+<code lang="ruby" name="capability">
+desired_caps = {
+  'browserstack.local': 'true',
+    'browserstack.localIdentifier': ENV['BROWSERSTACK_LOCAL_IDENTIFIER'],
+}
+</code>
+
 
 
 <code lang="java" name="code">
@@ -30,6 +38,11 @@ public static void main(String args[]) throws MalformedURLException, Interrupted
 
 driver = new AndroidDriver<AndroidElement>(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), caps);
 </code>
+<code lang="java" name="capability">
+DesiredCapabilities caps = new DesiredCapabilities();
+caps.setCapability("browserstack.local", "true");
+caps.setCapability("browserstack.localIdentifier", System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
+</code>
 
 
 <code lang="python" name="code">
@@ -45,6 +58,13 @@ desired_cap = {
 
 driver = webdriver.Remote("http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_cap)
 </code>
+<code lang="python" name="capability">
+desired_cap = {
+ 'browserstack.local': 'true',
+ 'browserstack.localIdentifier': os.getenv("BROWSERBROWSERSTACK_LOCAL_IDENTIFIER")
+}
+</code>
+
 
 
 <code lang="nodejs" name="code">
@@ -65,9 +85,15 @@ driver
   .fin(function() { return driver.quit(); })
   .done();
 </code>
+<code lang="nodejs" name="capability">
+var capabilities = {
+ "browserstack.local" : "true",
+ "browserstack.localIdentifier" : process.env.BROWSERSTACK_LOCAL_IDENTIFIER
+}
+</code>
 
 
-<code lang="c#" name="code">
+<code lang="c-sharp" name="code">
 username = Environment.GetEnvironmentVariable("BROWSERSTACK_USERNAME");
 accessKey = Environment.GetEnvironmentVariable("BROWSERSTACK_ACCESS_KEY");
 
@@ -77,5 +103,31 @@ caps.SetCapability("app", Environment.GetEnvironmentVariable("BROWSERSTACK_APP_I
 caps.SetCapability("build", "MySampleBuild");
 
 AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new Uri("http://hub-cloud.browserstack.com/wd/hub"), caps);
-
 </code>
+<code lang="c-sharp" name="capability">
+DesiredCapabilities caps = new DesiredCapabilities();
+caps.SetCapability("browserstack.local", "true");
+caps.SetCapability("browserstack.localIdentifier",  Environment.GetEnvironmentVariable("BROWSERSTACK_LOCAL_IDENTIFIER"));
+</code>
+
+
+
+<code lang="php" name="code">
+$username = getenv("BROWSERSTACK_USERNAME");
+$accessKey = getenv("BROWSERSTACK_ACCESS_KEY");
+$app = getenv("BROWSERSTACK_APP_ID");
+
+
+$capabilities = new DesiredCapabilities();
+$capabilities->setCapability("device", "Samsung Galaxy S8");
+$capabilities->setCapability("app", $app);
+$capabilities->setCapability("build", "MySampleBuild");
+
+$driver = RemoteWebDriver::create("http://hub-cloud.browserstack.com/wd/hub", $capabilities);
+</code>
+<code lang="php" name="capability">
+$capabilities = new DesiredCapabilities();
+$capabilities->setCapability("browserstack.local", "true");
+$capabilities->setCapability("browserstack.localIdentifier", getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
+</code>
+</snippets>
